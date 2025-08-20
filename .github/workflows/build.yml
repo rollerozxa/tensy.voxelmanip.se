@@ -13,29 +13,29 @@ jobs:
   web:
     name: Deploy webby site
     runs-on: ubuntu-latest
-#    container:
-#      image: emscripten/emsdk:latest
-#      env: { LANG: "C.UTF-8" }
+    container:
+      image: emscripten/emsdk:latest
+      env: { LANG: "C.UTF-8" }
     steps:
       - uses: actions/checkout@v4
         with:
           path: website
 
-#      - uses: actions/checkout@v4
-#        with:
-#          repository: rollerozxa/tensy
-#          path: tensy
+      - uses: actions/checkout@v4
+        with:
+          repository: rollerozxa/tensy
+          path: tensy
 
-#      - name: Install build dependencies
-#        run: |
-#          sudo apt-get update
-#          sudo apt-get install -y ninja-build xxd zip
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build xxd zip
 
-#      - name: Build Tensy
-#        run: |
-#          ./tensy/packaging/build.sh web
-#          mkdir -p website/play
-#          mv tensy/packaging/bin/web/* website/play/
+      - name: Build Tensy
+        run: |
+          ./tensy/packaging/build.sh web
+          mkdir -p website/play
+          mv tensy/packaging/bin/web/* website/play/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

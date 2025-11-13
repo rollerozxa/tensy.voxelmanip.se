@@ -1,0 +1,40 @@
+title: Tensy
+description: Website for Tensy
+url: https://tensy.voxelmanip.se
+
+baseurl: /
+
+excerpt_separator: <!--more-->
+
+lang: en_GB
+
+include:
+  - .well-known/
+
+permalink: "/news/:year/:title/"
+paginate: 10
+paginate_path: "/news/:num/"
+
+redirect_from:
+  json: false
+
+sass:
+  style: compressed
+  sourcemap: never
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap

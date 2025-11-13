@@ -1,84 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Attribution - Tensy</title>
-	<style>
-body {
-	background: #0f0f0f;
-	color: #eee;
-	font-family: sans-serif;
-	font-size: 1em;
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 0;
-	box-sizing: border-box;
-}
-.container {
-	background-color: #1f1f1f;
-	padding: 0 10px;
-	box-sizing: border-box;
-}
-a {
-	color: #6cf;
-}
-h1, h2, h3 {
-	margin: 0;
-	padding-top: 0.75em;
-}
-h2 {
-	border-bottom: 1px solid #c7c7c7;
-}
-	</style>
-</head>
-<body><div class="container">
-	<h1>Attribution</h1>
+---
+layout: default
+permalink: /attribution.html
+---
 
-<p>This page contains attribution for assets and libraries used in Tensy.</p>
+# Attribution
+This page contains attribution for assets and libraries used in Tensy.
 
-<h2>Graphics</h2>
+## Graphics
 
-<h3>Monogram Font</h3>
+### Monogram Font
 
-<p><strong>Source:</strong> <a href="https://datagoblin.itch.io/monogram">https://datagoblin.itch.io/monogram</a></p>
+**Source:** <https://datagoblin.itch.io/monogram>
 
-<p><strong>License:</strong> Creative Commons Zero</p>
+**License:** Creative Commons Zero
 
-<h2>Music</h2>
+## Sound Effects
 
-<h3>Main Theme</h3>
+shuffle.ogg: <https://freesound.org/people/nomiqbomi/sounds/578791/>
 
-<p>cs127 - Digital Rectal Exam</p>
+## Music
 
-<p>(Converted to .xm format to rebalance audio channels)</p>
+### Main Theme
 
-<p><strong>Source:</strong> <a href="https://modarchive.org/index.php?request=view_by_moduleid&query=208161">https://modarchive.org/index.php?request=view_by_moduleid&query=208161</a></p>
+cs127 - Digital Rectal Exam
 
-<p><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
+(Converted to .xm format to rebalance audio channels)
 
-<h3>Credits Theme</h3>
+**Source:** <https://modarchive.org/index.php?request=view_by_moduleid&query=208161>
 
-<p>Andreas Viklund - Allt jag vill</p>
+**License:** [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-<p><strong>Source:</strong> <a href="https://modarchive.org/index.php?request=view_by_moduleid&query=134810">https://modarchive.org/index.php?request=view_by_moduleid&query=134810</a></p>
+### Credits Theme
 
-<p><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
+Andreas Viklund - Allt jag vill
 
-<h3>Clear Data Loop</h3>
+**Source:** <https://modarchive.org/index.php?request=view_by_moduleid&query=134810>
 
-<p>"Mystery"</p>
+**License:** [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-<p><strong>Source:</strong> <a href="https://freesound.org/people/ZHR%C3%98/sounds/807884/">https://freesound.org/people/ZHR%C3%98/sounds/807884/</a></p>
+### Clear Data Loop
 
-<p><strong>License:</strong> Creative Commons Zero</p>
+"Mystery"
 
-<h2>Libraries</h2>
+**Source:** <https://freesound.org/people/ZHR%C3%98/sounds/807884/>
 
-<h3>SDL3, SDL3_mixer</h3>
-<p><a href="https://github.com/libsdl-org/SDL">https://github.com/libsdl-org/SDL</a></p>
-<p><a href="https://github.com/libsdl-org/SDL_mixer">https://github.com/libsdl-org/SDL_mixer</a></p>
-<pre>
+**License:** Creative Commons Zero
+
+## Libraries
+
+### SDL3, SDL3_mixer
+
+<https://github.com/libsdl-org/SDL>
+
+<https://github.com/libsdl-org/SDL_mixer>
+
+```
 Copyright (C) 1997-2025 Sam Lantinga <slouken@libsdl.org>
 
 This software is provided 'as-is', without any express or implied
@@ -96,11 +72,13 @@ appreciated but is not required.
 2. Altered source versions must be plainly marked as such, and must not be
 misrepresented as being the original software.
 3. This notice may not be removed or altered from any source distribution.
-</pre>
+```
 
-<h3>SDL_QOI</h3>
-<p><a href="https://github.com/phoboslab/qoi">https://github.com/phoboslab/qoi</a></p>
-<pre>
+### SDL_QOI
+
+<https://github.com/phoboslab/qoi>
+
+```
 MIT License
 
 Copyright (c) 2022 Dominic Szablewski
@@ -122,11 +100,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-</pre>
+```
 
-<h3>libxmp</h3>
-<p><a href="https://github.com/libxmp/libxmp">https://github.com/libxmp/libxmp</a></p>
-<pre>
+### libxmp
+
+<https://github.com/libxmp/libxmp>
+
+```
 Extended Module Player
 Copyright (C) 1996-2024 Claudio Matsuoka and Hipolito Carraro Jr
 
@@ -147,7 +127,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-	</pre>
-
-</div></body>
-</html>
+```

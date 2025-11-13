@@ -1,1 +1,4 @@
 play
+.bundle
+Gemfile.lock
+_site

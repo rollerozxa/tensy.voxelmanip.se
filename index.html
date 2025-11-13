@@ -1,54 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tensy</title>
+---
+layout: index
+---
 
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header>
-		<img class="letter" src="assets/title_0.webp" alt="T">
-		<img class="letter" src="assets/title_1.webp" alt="e">
-		<img class="letter" src="assets/title_2.webp" alt="n">
-		<img class="letter" src="assets/title_3.webp" alt="s">
-		<img class="letter" src="assets/title_4.webp" alt="y">
-	</header>
+<div class="header">
+	<img class="letter" src="assets/title_0.webp" alt="T">
+	<img class="letter" src="assets/title_1.webp" alt="e">
+	<img class="letter" src="assets/title_2.webp" alt="n">
+	<img class="letter" src="assets/title_3.webp" alt="s">
+	<img class="letter" src="assets/title_4.webp" alt="y">
+</div>
 
-	<main>
-		<p>A simple but addictive puzzle game. Your mission is to match numbers such that they add up to 10. Simply click and drag with your mouse or tap and drag on mobile to make a selection and make sure the numbers add up to 10!</p>
+<div class="main">
+	<p>A simple but addictive puzzle game. Your mission is to match numbers such that they add up to 10. Simply click and drag with your mouse or tap and drag on mobile to make a selection and make sure the numbers add up to 10!</p>
 
-		<p class="availablefor">Available for:</p>
-		<div class="platforms">
-			<img src="plat/windows.svg" alt="Windows">
-			<img src="plat/apple.svg" alt="macOS">
-			<img src="plat/linux.svg" alt="Linux">
-			<img src="plat/web.svg" alt="Web">
-			<img src="plat/android.svg" alt="Android">
-			<img src="plat/haiku.svg" alt="Haiku OS">
-			<img src="plat/vita.svg" alt="PlayStation Vita">
-		</div>
+	<p class="availablefor">Available for:</p>
+	<div class="platforms">
+		{%- for p in site.data.platforms -%}
+			<img src="/assets/plat/{{ p.file }}" alt="{{ p.name }}">
+		{%- endfor -%}
+	</div>
 
-		<div class="downloads">
-			<a class="btn" href="play/">
-				<img src="assets/play.svg" height="42">
-				Play in browser
-			</a>
-			<a href="https://rollerozxa.itch.io/tensy">
-				<img alt="Get it on itch.io" src="assets/itch.svg" width="240">
-			</a>
-		</div>
-	</main>
+	<div class="downloads">
+		<a class="btn" href="play/">
+			<img src="/assets/play.svg" height="42">
+			Play in browser
+		</a>
+		<a href="https://rollerozxa.itch.io/tensy">
+			<img alt="Get it on itch.io" src="/assets/itch.svg" width="240">
+		</a>
+	</div>
+</div>
 
-	<footer>
-		<p>
-			Made by
-			<span class="author">
-				<img src="raccoon.webp" width="16" height="16">
-				<a href="https://voxelmanip.se">ROllerozxa</a>
-			</span>
-		</p>
-	</footer>
-</body>
-</html>
+<div class="footer">
+	<p>
+		Made by
+		<span class="author">
+			<img src="/assets/raccoon.webp" width="16" height="16">
+			<a href="https://voxelmanip.se">ROllerozxa</a>
+		</span>
+	</p>
+</div>

@@ -18,45 +18,40 @@ jobs:
       env: { LANG: "C.UTF-8" }
     steps:
       - uses: actions/checkout@v4
-        with:
-          path: website
 
       - uses: actions/checkout@v4
         with:
           repository: rollerozxa/tensy
-          path: tensy
+          path: .tensy
           ref: fd24d0843506c3e0b2e349f5894305a2d3553b8f
 
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y ninja-build xxd zip
+          sudo apt-get install -y libyaml-dev ninja-build xxd zip
 
       - name: Build Tensy
         run: |
-          ./tensy/packaging/build.sh web
-          mkdir -p website/play
-          mv tensy/packaging/bin/web/* website/play/
+          ./.tensy/packaging/build.sh web
+          mkdir -p play
+          mv .tensy/packaging/bin/web/* play/
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3
           bundler-cache: true
-          working-directory: website
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
-        run: |
-          cd website
-          bundle exec jekyll build
+        run: bundle exec jekyll build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'website/_site'
+          path: '_site'
 
       - name: Deploy to Pages
         id: deployment

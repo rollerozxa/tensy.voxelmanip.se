@@ -23,7 +23,7 @@ jobs:
         with:
           repository: rollerozxa/tensy
           path: .tensy
-          ref: fd24d0843506c3e0b2e349f5894305a2d3553b8f
+          ref: 4bccde2c2ea02f7d699f0622365564abfba6ad16
 
       - name: Install build dependencies
         run: |

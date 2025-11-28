@@ -1,5 +1,7 @@
 ---
 layout: index
+description: A simple but addictive puzzle game. Your mission is to match numbers such that they add up to 10.
+cover: /screenshots/banner.png
 ---
 
 <div class="header">
@@ -13,10 +15,9 @@ layout: index
 <div class="main">
 	<p>A simple but addictive puzzle game. Your mission is to match numbers such that they add up to 10. Simply click and drag with your mouse or tap and drag on mobile to make a selection and make sure the numbers add up to 10!</p>
 
-	<p class="availablefor">Available for:</p>
 	<div class="platforms">
 		{%- for p in site.data.platforms -%}
-			<img src="/assets/plat/{{ p.file }}" alt="{{ p.name }}">
+			<img src="/assets/plat/{{ p.file }}" alt="{{ p.name }}" title="Available for {{ p.title | default: p.name }}">
 		{%- endfor -%}
 	</div>
 
@@ -28,6 +29,10 @@ layout: index
 		<a href="https://rollerozxa.itch.io/tensy">
 			<img alt="Get it on itch.io" src="/assets/itch.svg" width="240">
 		</a>
+	</div>
+
+	<div class="misc">
+		<a href="https://github.com/rollerozxa/tensy">Source code</a> - <a href="/news/">Newsroom</a>
 	</div>
 </div>
 

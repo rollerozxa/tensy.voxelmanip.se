@@ -1,6 +1,7 @@
-@use "_base" as *;
 
-body {
+// Index page stuff
+
+body.index {
 	max-width: 960px;
 
 	font-family: Archivo, Roboto, sans-serif;
@@ -8,21 +9,41 @@ body {
 	font-size: 1.35em;
 	min-height: 100vh;
 	padding-bottom: 0;
-}
 
-.header {
-	margin-bottom: 2.5em;
-	display: flex;
-	justify-content: center;
-	flex-wrap: nowrap;
-}
+	.header {
+		margin-bottom: 2.5em;
+		display: flex;
+		justify-content: center;
+		flex-wrap: nowrap;
+	}
 
-a:hover {
-	text-decoration: none;
-}
+	a:hover {
+		text-decoration: none;
+	}
 
-p {
-	line-height: 1.5;
+	p {
+		line-height: 1.5;
+	}
+
+	.footer {
+		margin-top: 13em;
+		font-weight: normal;
+		text-align: center;
+		font-size: 1rem;
+	}
+	.author {
+		display: inline-flex;
+		align-items: center;
+		column-gap: 0.25em;
+	}
+	.author a {
+		color: white;
+	}
+
+	.misc {
+		text-align: center;
+		margin-top: 1.5em;
+	}
 }
 
 @keyframes wave {
@@ -42,20 +63,17 @@ p {
 .letter[alt=s] { animation-delay: 0.3s }
 .letter[alt=y] { animation-delay: 0.4s }
 
-.availablefor {
-	text-align: center;
-	margin-top: 2.5em;
-	font-weight: 500;
-}
 .platforms {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 25px;
 	justify-content: center;
+	margin-top: 2.5em;
 	margin-bottom: 2.5em;
-}
-.platforms img {
-	height: 36px;
+
+	img {
+		height: 36px;
+	}
 }
 
 .downloads {
@@ -76,28 +94,16 @@ p {
 	border-radius: 6px;
 	text-decoration: none;
 	color: white;
-}
-.btn:hover {
-	background-color: #5252f0;
-}
-.btn:active {
-	background-color: #3737ce;
-}
-.btn img {
-	margin-right: 0.25em;
-}
 
-.footer {
-	margin-top: 13em;
-	font-weight: normal;
-	text-align: center;
-	font-size: 1rem;
-}
-.author {
-	display: inline-flex;
-	align-items: center;
-	column-gap: 0.25em;
-}
-.author a {
-	color: white;
+	&:hover {
+		background-color: #5252f0;
+	}
+
+	&:active {
+		background-color: #3737ce;
+	}
+
+	img {
+		margin-right: 0.25em;
+	}
 }

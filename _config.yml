@@ -2,6 +2,8 @@ title: Tensy
 description: Website for Tensy
 url: https://tensy.voxelmanip.se
 
+author: ROllerozxa
+
 baseurl: /
 
 excerpt_separator: <!--more-->
@@ -34,7 +36,6 @@ defaults:
       layout: "post"
 
 plugins:
-  - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap

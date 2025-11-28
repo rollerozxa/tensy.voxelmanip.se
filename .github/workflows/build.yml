@@ -13,28 +13,19 @@ jobs:
   web:
     name: Deploy webby site
     runs-on: ubuntu-latest
-    container:
-      image: emscripten/emsdk:latest
-      env: { LANG: "C.UTF-8" }
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/checkout@v4
-        with:
-          repository: rollerozxa/tensy
-          path: .tensy
-          ref: 4bccde2c2ea02f7d699f0622365564abfba6ad16
 
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libyaml-dev ninja-build xxd zip
+          sudo apt-get install -y zip
 
-      - name: Build Tensy
+      - name: Download web version of Tensy
         run: |
-          ./.tensy/packaging/build.sh web
-          mkdir -p play
-          mv .tensy/packaging/bin/web/* play/
+          wget https://files.voxelmanip.se/.private/tensy-web-1.0.zip -O tensy-web.zip
+          unzip tensy-web.zip -d play/
+          rm tensy-web.zip
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1

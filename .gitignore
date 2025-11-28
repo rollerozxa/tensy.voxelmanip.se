@@ -1,4 +1,5 @@
-play
+play/tensy.js
+play/tensy.wasm
 .bundle
 Gemfile.lock
 _site

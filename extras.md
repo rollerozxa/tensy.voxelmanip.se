@@ -17,7 +17,7 @@ On platforms and devices with a keyboard, you can press Ctrl + U when on the set
 If you hold down Shift at the configure game dialog a fourth board size option called "Hyuge!" appears. It is four times as big as the Big board size and the numbers end up being quite small.
 
 ## Customising number colours
-You can specify custom colours for the coloured numbers by creating a `numbers_colors.txt` (note the American spelling) file in the user data directory. The format consists of nine hex colour codes for each number from 1 to 9, separated by a colon. For example this is how the default colours look like in the format:
+You can specify custom colours for the coloured numbers by creating a `number_colors.txt` (note the American spelling) file in the user data directory. The format consists of nine hex colour codes for each number from 1 to 9, separated by a colon. For example this is how the default colours look like in the format:
 
 ```
 FF988F:FFB169:FFF069:A0FF69:69FF73:69FFD2:69BBFF:9D7DFF:FF7DE7

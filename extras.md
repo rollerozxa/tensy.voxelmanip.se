@@ -13,6 +13,9 @@ You can also force Tensy to use the Direct3D renderer by passing `-d3d` as a com
 ## Opening the user data directory
 On platforms and devices with a keyboard, you can press Ctrl + U when on the settings dialog to open the user data directory in some kind of file explorer. This can be useful for backing up your data or transferring it to another device.
 
+## "Hyuge!" board size
+If you hold down Shift at the configure game dialog a fourth board size option called "Hyuge!" appears. It is four times as big as the Big board size and the numbers end up being quite small.
+
 ## Customising number colours
 You can specify custom colours for the coloured numbers by creating a `numbers_colors.txt` (note the American spelling) file in the user data directory. The format consists of nine hex colour codes for each number from 1 to 9, separated by a colon. For example this is how the default colours look like in the format:
 

@@ -23,7 +23,7 @@ jobs:
 
       - name: Download web version of Tensy
         run: |
-          wget https://files.voxelmanip.se/.private/tensy-web-1.0.zip -O tensy-web.zip
+          wget https://files.voxelmanip.se/.private/tensy-web-1.0.1.zip -O tensy-web.zip
           unzip tensy-web.zip -d play/
           rm tensy-web.zip
 

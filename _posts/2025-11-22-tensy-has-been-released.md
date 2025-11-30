@@ -6,9 +6,7 @@ The 1.0 version of Tensy has now officially been released, and is available for 
 
 <!--more-->
 
-<a href="https://rollerozxa.itch.io/tensy">
-	<img alt="Get it on itch.io" src="/assets/itch.svg" width="240">
-</a>
+{% include itch-button.html %}
 
 It has been a long journey to get here, but I finally feel the game is in a state where I feel comfortable making a public release. Tensy is a puzzle game where you select numbers to make them add up to ten. There are multiple game modes, different board sizes, local leaderboards, detailed statistics and more.
 

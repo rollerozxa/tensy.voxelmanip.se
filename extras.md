@@ -22,3 +22,9 @@ You can specify custom colours for the coloured numbers by creating a `number_co
 ```
 FF988F:FFB169:FFF069:A0FF69:69FF73:69FFD2:69BBFF:9D7DFF:FF7DE7
 ```
+
+## Easter eggs
+There are some hidden easter eggs in Tensy. They won't be documented in detail here to avoid spoiling them, but here are some hints:
+
+- Something in the about menu can be clicked to reveal a secret (1.0.1+).
+- A secret game mode can be activated through the settings menu. There are two methods of activating it: either with a keyboard (1.0+) or by being on the settings menu during a special time (1.0.1+).

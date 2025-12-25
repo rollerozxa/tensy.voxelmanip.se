@@ -1,6 +1,5 @@
 ---
-layout: default
-permalink: /attribution.html
+title: Attribution
 ---
 
 # Attribution

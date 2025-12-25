@@ -10,6 +10,12 @@ By default Tensy uses SDL's OpenGL renderer on Windows. However, if the OpenGL r
 
 You can also force Tensy to use the Direct3D renderer by passing `-d3d` as a command line argument when launching Tensy. You can do this by creating a shortcut to `tensy.exe`, right-clicking the shortcut, selecting "Properties", and adding `-d3d` to the end of the "Target" field.
 
+## Troubleshooting: Unblur textures
+If textures appear really blurry for some reason you can try launching Tensy with the `-unblur` command-line argument. This forces nearest neighbour scaling rather than the smart pixel art scaling that may not work in some very specific environments.
+
+## Attribution
+For attribution for assets and libraries used in Tensy, see the [Attribution](/attribution/) page.
+
 ## Opening the user data directory
 On platforms and devices with a keyboard, you can press Ctrl + U when on the settings dialog to open the user data directory in some kind of file explorer. This can be useful for backing up your data or transferring it to another device.
 
